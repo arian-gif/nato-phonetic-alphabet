@@ -8,8 +8,9 @@ for (index, row) in data.iterrows():
 isLetters = False
 code_words=""
 while not isLetters:
+    word = input("Enter word:\n")
     try:
-        word = input("Enter word:\n")
+        
         code_words = [nato[letter] for letter in word]
         isLetters=True
     except KeyError:
